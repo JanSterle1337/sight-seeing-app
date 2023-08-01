@@ -1,4 +1,12 @@
-import { Component, OnInit, ViewContainerRef, ApplicationRef, EnvironmentInjector, ComponentRef } from '@angular/core';
+import { 
+  Component, 
+  OnInit, 
+  ViewContainerRef, 
+  ApplicationRef, 
+  EnvironmentInjector, 
+  ComponentRef,
+  Renderer2 
+} from '@angular/core';
 import { Map, Observable, View } from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
@@ -12,7 +20,7 @@ import { CASTLES } from '../mock-castles'
 import { CastleService } from '../service/castle.service';
 import { Castle } from '../entity/Castle';
 import { MarkerOverlayConfigurator } from '../utility/MarkerOverlayConfigurator';
-import { ToastService } from '../service/toast.service';
+import { MapCastleDetailsBuilderService } from '../service/map-castle-details-builder.service';
 import { MapCastleDetailsComponent } from '../map-castle-details/map-castle-details.component';
 
 
@@ -32,7 +40,7 @@ export class MapComponent implements OnInit {
   zoomLevel: number = 9;
   map: Map;
 
-  private componentsReferences: ComponentRef<MapCastleDetailsComponent>[]
+  private componentsReferences: ComponentRef<MapCastleDetailsComponent>[] = [];
 
   markerOverlays: {
     'smaller': Overlay[];
@@ -45,9 +53,10 @@ export class MapComponent implements OnInit {
     private castleService: CastleService,
     private markerOverlayConfigurator: MarkerOverlayConfigurator,
     private viewContainerRef: ViewContainerRef,
-    private toastService: ToastService,
+    private mapCastleDetailsBuilderService: MapCastleDetailsBuilderService,
     private appRef: ApplicationRef,
-    private injector: EnvironmentInjector
+    private injector: EnvironmentInjector,
+    private renderer: Renderer2
     ) 
   { }
 
@@ -56,7 +65,7 @@ export class MapComponent implements OnInit {
     this.getCastles().subscribe(castles => {
       this.castles = castles;
       this.initMap();
-      //this.toastService.open('Hello we make new component!');
+      //this.mapCastleDetailsBuilderService.open('Hello we make new component!');
     });
    
   }
@@ -89,7 +98,24 @@ export class MapComponent implements OnInit {
      console.log("Hello")
 
      this.markerOverlays.smaller.map((marker) => {
-      console.log("Marker",marker);
+      marker.getElement()?.addEventListener('click', () => {
+        console.log("Baje da smo kliklne na grad iz druzga dela kode");
+         // @ts-ignore: Object is possibly 'null'
+
+        if (this.componentsReferences.length > 0) {
+
+          for (let i = 0; i < this.componentsReferences.length; i++) {
+            this.mapCastleDetailsBuilderService.close(this.componentsReferences[i]);
+          }
+
+          console.log("Dolzina je: ", this.componentsReferences.length);
+          console.log("Odstranjujejmo")
+        }
+
+        // @ts-ignore: Object is possibly 'null'
+        this.componentsReferences.push(this.mapCastleDetailsBuilderService.open(marker.getId()?.toString()));
+      });
+      //console.log("Marker",marker);
       this.map.addOverlay(marker);
      });
 
@@ -100,59 +126,6 @@ export class MapComponent implements OnInit {
     this.map.addInteraction(
       new MouseWheelZoom()
     )
-
-    this.map.on('moveend', () => {
-      // @ts-ignore: Object is possibly 'null'   
-      if (this.map.getView().getZoom() > 12) {
-        //gremo dat tavelke ikone
-
-        const overlays: Overlay[] = this.map.getOverlays().getArray();
-
-        overlays.forEach(overlay => {
-       
-          // @ts-ignore: Object is possibly 'null'
-          overlay.getElement().addEventListener('click', () => {
-
-            // @ts-ignore: Object is possibly 'null'
-            this.toastService.open(overlay.getId()?.toString());
-
-            console.log(overlay.getId())
-            console.log("Klik na grad");
-          })
-          this.map.removeOverlay(overlay);
-          
-        })
-
-        this.markerOverlays.bigger.forEach(biggerOverlay => this.map.addOverlay(biggerOverlay));
-
-        // @ts-ignore: Object is possibly 'null'
-      } else if (this.map.getView().getZoom() <= 12) {
- 
-        const overlays: Overlay[] = this.map.getOverlays().getArray();
-
-        overlays.forEach(overlay => {
-
-
-          // @ts-ignore: Object is possibly 'null'
-          overlay.getElement().addEventListener('click', () => {
-            const castleId = overlay.getId()?.toString().split("-").pop();
-            
-
-            // @ts-ignore: Object is possibly 'null'
-            this.toastService.open(overlay.getId()?.toString());
-            //const overlayElement = overlay.getElement();
-
-            console.log(overlay.getId())
-            console.log("Klik na grad");
-          })
-
-          this.map.removeOverlay(overlay);
-          
-        })
-
-        this.markerOverlays.smaller.forEach(smallerOverlay => this.map.addOverlay(smallerOverlay));
-      }
-    })
 
   }
 
