@@ -28,7 +28,8 @@
     "typeRoots": [
       "node_modules/@types",
       "jasmine"
-    ]
+    ],
+    "strictPropertyInitialization": false
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

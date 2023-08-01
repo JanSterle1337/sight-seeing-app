@@ -43,6 +43,31 @@ export class MarkerConfigurator {
         return logoMarkerElement;
     }
 
+    newSmallCastleLogoMarker(): HTMLImageElement {
+
+        const logoMarkerElement: HTMLImageElement = document.createElement('img');
+        logoMarkerElement.className = 'marker';
+        logoMarkerElement.style.width = '20px';
+        logoMarkerElement.src = '../../assets/mapLogos/castle.png';
+        logoMarkerElement.style.height = '20px';
+        logoMarkerElement.style.zIndex = '9999';
+
+        return logoMarkerElement;
+    }
+
+    newBigCastleLogoMarker(): HTMLImageElement {
+
+        const logoMarkerElement: HTMLImageElement = document.createElement('img');
+        logoMarkerElement.className = 'marker';
+        logoMarkerElement.style.width = '35px';
+        logoMarkerElement.src = '../../assets/mapLogos/castle.png';
+        logoMarkerElement.style.height = '35px';
+        logoMarkerElement.style.zIndex = '9999';
+
+        return logoMarkerElement;
+    }
+
+
     newDefaultMarker(): HTMLDivElement {
 
         const markerElement: HTMLDivElement = document.createElement('div');

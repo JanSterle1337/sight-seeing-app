@@ -7,13 +7,17 @@ import { NameEditorComponent } from './name-editor/name-editor.component';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 import { MapComponent } from './map/map.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MapCastleDetailsComponent } from './map-castle-details/map-castle-details.component';
+import { MapDetailDirective } from './map-detail.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NameEditorComponent,
     ProfileEditorComponent,
-    MapComponent
+    MapComponent,
+    MapCastleDetailsComponent,
+    MapDetailDirective
   ],
   imports: [
     BrowserModule,

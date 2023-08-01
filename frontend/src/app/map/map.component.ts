@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Map, View } from 'ol';
+import { Component, OnInit, ViewContainerRef, ApplicationRef, EnvironmentInjector, ComponentRef } from '@angular/core';
+import { Map, Observable, View } from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 import { DragPan, MouseWheelZoom } from 'ol/interaction';
@@ -11,6 +11,10 @@ import { catchError, from, tap } from 'rxjs';
 import { CASTLES } from '../mock-castles'
 import { CastleService } from '../service/castle.service';
 import { Castle } from '../entity/Castle';
+import { MarkerOverlayConfigurator } from '../utility/MarkerOverlayConfigurator';
+import { ToastService } from '../service/toast.service';
+import { MapCastleDetailsComponent } from '../map-castle-details/map-castle-details.component';
+
 
 
 @Component({
@@ -21,28 +25,38 @@ import { Castle } from '../entity/Castle';
 
 export class MapComponent implements OnInit {
 
-  currLatitude: number =  0;
-  currLongitude: number = 0;
+  currLatitude: number =  46.056946;
+  currLongitude: number = 14.505751;
+
   castles: Castle[] = [];
+  zoomLevel: number = 9;
+  map: Map;
+
+  private componentsReferences: ComponentRef<MapCastleDetailsComponent>[]
+
+  markerOverlays: {
+    'smaller': Overlay[];
+    'bigger':  Overlay[];
+  }
 
   constructor(
     private locationService: LocationService, 
     private markerConfigurator: MarkerConfigurator,
-    private castleService: CastleService
+    private castleService: CastleService,
+    private markerOverlayConfigurator: MarkerOverlayConfigurator,
+    private viewContainerRef: ViewContainerRef,
+    private toastService: ToastService,
+    private appRef: ApplicationRef,
+    private injector: EnvironmentInjector
     ) 
-  {
-    console.log("constructor")
-
-  }
+  { }
 
   ngOnInit() {
-    console.log("ngOnInit");
 
-    this.getCastles();
-
-    this.getPositionData().subscribe(() => {
-      console.log("Current lattitude and longitude values:", this.currLatitude, this.currLongitude);
+    this.getCastles().subscribe(castles => {
+      this.castles = castles;
       this.initMap();
+      //this.toastService.open('Hello we make new component!');
     });
    
   }
@@ -52,7 +66,7 @@ export class MapComponent implements OnInit {
     const osm = this.initOsm();
     console.log("In initMap", this.currLatitude, this.currLongitude);
 
-    const map = new Map({
+    this.map = new Map({
       target: 'map',
       layers: [
         new TileLayer({
@@ -61,7 +75,7 @@ export class MapComponent implements OnInit {
       ],
       view: new View({
         center: fromLonLat([this.currLongitude,this.currLatitude]), // Set the center to Ljubljana, Slovenia
-        zoom: 13, // Set the zoom level (adjust as needed)
+        zoom: this.zoomLevel, // Set the zoom level (adjust as needed)
       }),
       interactions: [
         new DragPan(),
@@ -70,34 +84,75 @@ export class MapComponent implements OnInit {
       controls: []
     });
 
-    const marker1 = this.markerConfigurator.newDefaultMarker();
+     this.markerOverlays = this.markerOverlayConfigurator.configureCastleOverlay(this.castles);
 
-    const photoMarker = this.markerConfigurator.newLogoMarker();
-    console.log(photoMarker);
+     console.log("Hello")
 
-    const markerOverlays = this.castles.map((castle) => {
-  
-      const photoMarker = this.markerConfigurator.newLogoMarker();
+     this.markerOverlays.smaller.map((marker) => {
+      console.log("Marker",marker);
+      this.map.addOverlay(marker);
+     });
 
-      const markerOverlay = new Overlay({
-        element: photoMarker,
-        position: fromLonLat([castle.longitude, castle.latitude]),
-        positioning: 'center-center',
-        stopEvent: false
-      });
-
-      map.addOverlay(markerOverlay);
-      return markerOverlay;
-    })
-
-
-    map.addInteraction(
+    this.map.addInteraction(
       new DragPan()
     )
 
-    map.addInteraction(
+    this.map.addInteraction(
       new MouseWheelZoom()
     )
+
+    this.map.on('moveend', () => {
+      // @ts-ignore: Object is possibly 'null'   
+      if (this.map.getView().getZoom() > 12) {
+        //gremo dat tavelke ikone
+
+        const overlays: Overlay[] = this.map.getOverlays().getArray();
+
+        overlays.forEach(overlay => {
+       
+          // @ts-ignore: Object is possibly 'null'
+          overlay.getElement().addEventListener('click', () => {
+
+            // @ts-ignore: Object is possibly 'null'
+            this.toastService.open(overlay.getId()?.toString());
+
+            console.log(overlay.getId())
+            console.log("Klik na grad");
+          })
+          this.map.removeOverlay(overlay);
+          
+        })
+
+        this.markerOverlays.bigger.forEach(biggerOverlay => this.map.addOverlay(biggerOverlay));
+
+        // @ts-ignore: Object is possibly 'null'
+      } else if (this.map.getView().getZoom() <= 12) {
+ 
+        const overlays: Overlay[] = this.map.getOverlays().getArray();
+
+        overlays.forEach(overlay => {
+
+
+          // @ts-ignore: Object is possibly 'null'
+          overlay.getElement().addEventListener('click', () => {
+            const castleId = overlay.getId()?.toString().split("-").pop();
+            
+
+            // @ts-ignore: Object is possibly 'null'
+            this.toastService.open(overlay.getId()?.toString());
+            //const overlayElement = overlay.getElement();
+
+            console.log(overlay.getId())
+            console.log("Klik na grad");
+          })
+
+          this.map.removeOverlay(overlay);
+          
+        })
+
+        this.markerOverlays.smaller.forEach(smallerOverlay => this.map.addOverlay(smallerOverlay));
+      }
+    })
 
   }
 
@@ -121,16 +176,8 @@ export class MapComponent implements OnInit {
     );
   }
 
-  getCastles(): void {
-    this.castleService.getAllCastles().subscribe(
-      (data) => {
-        this.castles = data;
-        console.log(this.castles);
-      },
-      (error) => {
-        console.error('Error fetching castles: ', error);
-      }
-    )
+  getCastles() {
+    return this.castleService.getAllCastles();
   }
 
 }
