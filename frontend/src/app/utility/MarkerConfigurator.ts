@@ -37,6 +37,7 @@ export class MarkerConfigurator {
         logoMarkerElement.src = '../../assets/mapLogos/castle.png';
         logoMarkerElement.style.height = '20px';
         logoMarkerElement.style.zIndex = '9999';
+        logoMarkerElement.style.position='relative';
         //logoMarkerElement.style.background='red';
         //logoMarkerElement.style.borderRadius='50%';
 
@@ -51,7 +52,7 @@ export class MarkerConfigurator {
         logoMarkerElement.src = '../../assets/mapLogos/castle.png';
         logoMarkerElement.style.height = '20px';
         logoMarkerElement.style.zIndex = '9999';
-
+        logoMarkerElement.style.position='relative';
         return logoMarkerElement;
     }
 

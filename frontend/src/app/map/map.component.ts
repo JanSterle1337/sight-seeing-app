@@ -1,22 +1,16 @@
 import { 
   Component, 
-  OnInit, 
-  ViewContainerRef, 
-  ApplicationRef, 
-  EnvironmentInjector, 
-  ComponentRef,
-  Renderer2 
+  OnInit,  
+  ComponentRef
 } from '@angular/core';
-import { Map, Observable, View } from 'ol';
+import { Map, View } from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 import { DragPan, MouseWheelZoom } from 'ol/interaction';
 import { fromLonLat } from 'ol/proj';
 import Overlay from 'ol/Overlay';
 import { LocationService } from '../service/location.service';
-import { MarkerConfigurator } from '../utility/MarkerConfigurator';
 import { catchError, from, tap } from 'rxjs';
-import { CASTLES } from '../mock-castles'
 import { CastleService } from '../service/castle.service';
 import { Castle } from '../entity/Castle';
 import { MarkerOverlayConfigurator } from '../utility/MarkerOverlayConfigurator';
@@ -49,14 +43,9 @@ export class MapComponent implements OnInit {
 
   constructor(
     private locationService: LocationService, 
-    private markerConfigurator: MarkerConfigurator,
     private castleService: CastleService,
     private markerOverlayConfigurator: MarkerOverlayConfigurator,
-    private viewContainerRef: ViewContainerRef,
     private mapCastleDetailsBuilderService: MapCastleDetailsBuilderService,
-    private appRef: ApplicationRef,
-    private injector: EnvironmentInjector,
-    private renderer: Renderer2
     ) 
   { }
 

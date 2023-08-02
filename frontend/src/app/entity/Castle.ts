@@ -3,7 +3,7 @@ export interface Castle {
     name: string,
     town: string,
     municipality: string,
-    websiteLink: string,
+    website_link: string,
     latitude: number,
     longitude: number
 }

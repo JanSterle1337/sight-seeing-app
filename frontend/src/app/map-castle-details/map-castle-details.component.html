@@ -1,6 +1,16 @@
-<div [id]="dynamicId">
-    <p class="vidno">map-castle-details works!</p>
-    <p class="krneki">Muska</p>
-    <button (click)="close()">X</button>
+<div class="main">
+    <div class="row-alignment">
+        <div class="details-header">Informacije:</div>
+        <button (click)="close()" class="close-button">
+            <img src="../../assets/delete.png" class="close-image"/>
+        </button>
+    </div>
+    <div class="column-element" *ngIf="castle">
+        <h2>{{ castle.name }}</h2>
+        <p>Mesto: {{ castle.town }}</p>
+        <p>Občina: {{ castle.municipality }}</p>
+        <p class="link-wrapper">več: <a href="{{ castle.website_link }}" target="blank">{{ castle.website_link }}</a></p>
+    </div>
+  
 </div>
 

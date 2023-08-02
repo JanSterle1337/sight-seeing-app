@@ -21,6 +21,16 @@ export class CastleService {
       );
   }
 
+  getCastle(id: number): Observable<Castle> {
+    const url = `${this.baseUrl}castles/${id}`;
+
+    return this.http.get<Castle>(url).pipe(
+      tap(() => console.log(`fetched castle with id=${id}`)),
+      catchError(this.handleError<Castle>(`castle id=${id}`))
+      )
+    
+  }
+
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.log(`${operation} failed: ${error.messaage}`)
