@@ -2,6 +2,7 @@ package com.castles.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -52,6 +53,11 @@ public class CastleService {
 
     public List<Castle> getAllCastles() {
         return castleRepository.findAll();
+    }
+
+    public Castle getCastleById(Long castleId) {
+        Optional<Castle> optionalCastle = castleRepository.findById(castleId);
+        return optionalCastle.orElse(null);
     }
 
 }

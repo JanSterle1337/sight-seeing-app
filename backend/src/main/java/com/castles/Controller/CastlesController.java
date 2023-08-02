@@ -9,8 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -59,5 +61,18 @@ public class CastlesController {
     public List<Castle> getCastles() {
         return castleService.getAllCastles();
     } 
+
+    @GetMapping("/castles/{castleId}")
+    @CrossOrigin(origins = "*")
+    public ResponseEntity<Castle> getSpecificCastle(@PathVariable Long castleId) {
+        Castle castle = castleService.getCastleById(castleId);
+
+        if (castle != null) {
+            return ResponseEntity.ok(castle);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+
+    }
 
 }
