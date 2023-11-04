@@ -9,8 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -73,6 +75,16 @@ public class CastlesController {
             return ResponseEntity.notFound().build();
         }
 
+    }
+
+    @DeleteMapping("/castles")
+    @CrossOrigin(origins = "*")
+    public ResponseEntity<Void> deleteCastles() {
+         if (castleService.dropAll()) {
+             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        
+        return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR); 
     }
 
 }

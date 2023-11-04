@@ -60,4 +60,17 @@ public class CastleService {
         return optionalCastle.orElse(null);
     }
 
+    public boolean dropAll() {
+
+        castleRepository.deleteAll();
+        long remainingCount = castleRepository.count();
+
+        if (remainingCount == 0) {
+            return true;
+        }
+
+        return false;
+    }
+
+
 }
