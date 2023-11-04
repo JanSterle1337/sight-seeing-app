@@ -1,7 +1,8 @@
 import { 
   Component, 
   OnInit,  
-  ComponentRef
+  ComponentRef,
+  ViewEncapsulation
 } from '@angular/core';
 import { Map, View } from 'ol';
 import TileLayer from 'ol/layer/Tile';
@@ -17,12 +18,12 @@ import { MarkerOverlayConfigurator } from '../utility/MarkerOverlayConfigurator'
 import { MapCastleDetailsBuilderService } from '../service/map-castle-details-builder.service';
 import { MapCastleDetailsComponent } from '../map-castle-details/map-castle-details.component';
 
-
-
 @Component({
-  selector: 'app-map',
+  selector: 'app-map, [cl-map]',
   templateUrl: './map.component.html',
-  styleUrls: ['./map.component.css']
+  styleUrls: ['./map.component.css'],
+  encapsulation: ViewEncapsulation.None,
+  host: { 'class': 'cl-map' }
 })
 
 export class MapComponent implements OnInit {

@@ -1,0 +1,32 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+    <button (click)="showAllCastles()">show castles</button>
+    <button (click)="printCastlesConsole()">console castles</button>
+</div>
+<table class="table-wrapper" width="80%">
+    <tr class="table-header-wrapper">
+        <th>name</th>
+        <th>municipality</th>
+        <th>town</th>
+        <th>website</th>
+        <th>latitude</th>
+        <th>longitude</th>
+    </tr>
+    <tr *ngFor="let castle of castles">
+        <td>{{ castle.name }}</td>
+        <td>{{ castle.municipality }}</td>
+        <td>{{ castle.town }}</td>
+        <td>{{ castle.website_link }}</td>
+        <td>{{ castle.latitude }}</td>
+        <td>{{ castle.longitude }}</td>
+    </tr>
+    <!--<div class="table-body-wrapper" fxLayout="column">
+        <div *ngFor="let castle of castles" fxLayoutAlign="space-evenly center" fxLayout="row">
+            <div style="width: 20%" fxLayoutAlign="center center" background="red">{{ castle.name }}</div>
+            <div>{{ castle.municipality }}</div>
+            <div>{{ castle.town }}</div>
+            <div>{{ castle.website_link }}</div>
+            <div>{{ castle.latitude }}</div>
+            <div>{{ castle.longitude }}</div>
+        </div>
+    </div> -->
+</table>

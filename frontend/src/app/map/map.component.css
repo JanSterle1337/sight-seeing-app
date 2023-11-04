@@ -1,9 +1,15 @@
-.marker {
+.cl-map {
+  height: 800px;
+  display: block;
+
+  .marker {
     width: 15px;
     height: 15px;
-    background-color: red;
+    background-color: rgb(0, 128, 102);
+    padding: 2px;
     border-radius: 50%;
     border: 2px solid white;
     position: relative;
     z-index: 9999; /* Set the z-index higher than the map tiles */
   }
+}

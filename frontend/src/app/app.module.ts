@@ -9,6 +9,10 @@ import { MapComponent } from './map/map.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MapCastleDetailsComponent } from './map-castle-details/map-castle-details.component';
 import { MapDetailDirective } from './map-detail.directive';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './pages/home/home.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { GeneratorComponent } from './pages/generator/generator.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,16 @@ import { MapDetailDirective } from './map-detail.directive';
     ProfileEditorComponent,
     MapComponent,
     MapCastleDetailsComponent,
-    MapDetailDirective
+    MapDetailDirective,
+    HomeComponent,
+    GeneratorComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
