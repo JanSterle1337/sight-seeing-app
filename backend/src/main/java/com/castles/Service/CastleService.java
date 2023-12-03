@@ -34,7 +34,7 @@ public class CastleService {
     public List<Castle> scrapeCastles() {
         List<Castle> castles = new ArrayList<>();
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\ChromeDriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\janst\\programs\\chromedriver-win64\\chromedriver.exe");
         System.setProperty("webdriver.http.factory", "jdk-http-client");
 
         WebDriver webDriver = new ChromeDriver(webDriverOptions.getChromeOptions());

@@ -1,13 +1,6 @@
 package com.castles.Controller;
 
-import java.util.ArrayList;
 import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.castles.Entity.Castle;
 import com.castles.Repository.CastleRepository;
+import com.castles.Service.CastleExcelService;
 import com.castles.Service.CastleService;
 import com.castles.Utility.UserAgent;
 
@@ -32,11 +26,13 @@ public class CastlesController {
     private UserAgent userAgent;
     private CastleRepository castleRepository;
     private CastleService castleService;
+    private CastleExcelService castleExcelService;
 
-    public CastlesController(UserAgent userAgent, CastleService castleService ,CastleRepository repository) {
+    public CastlesController(UserAgent userAgent, CastleService castleService ,CastleRepository repository, CastleExcelService castleExcelService) {
         this.userAgent = userAgent;
         this.castleRepository = repository;
         this.castleService = castleService;
+        this.castleExcelService = castleExcelService;
     }
 
     @GetMapping("/")
@@ -47,16 +43,9 @@ public class CastlesController {
     @GetMapping("/scrape")
     public String scrapeData() {
     
-        List<Castle> castles = castleService.scrapeCastles();
-        
-        for (int i = 0; i < castles.size(); i++) {
-            Castle castle = castles.get(i);
-            System.out.printf("%s %s %s %s \n", castle.getName(), castle.getTown(), castle.getMunicipality(), castle.getWebsite_link());
-        }
+        castleExcelService.importCsv();
 
-        castleService.addNewCastles(castles);
-
-        return "scraped and saved";
+        return "Baje da scrapamo";
     }
 
     @GetMapping("/castles")

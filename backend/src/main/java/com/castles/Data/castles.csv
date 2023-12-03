@@ -1,0 +1,186 @@
+id,latitude,longitude,municipality,name,town,website_link
+1,45.86141944,15.2004,Novo mesto,Ajdov grad,Sela pri Štravberku,https://sl.wikipedia.org/wiki/Ajdov_grad
+2,46.12646944,14.76216111,Moravče,Grad Belnek,Drtija,https://sl.wikipedia.org/wiki/Grad_Belnek
+3,46.045,15.69388889,Brežice,Grad Bizeljsko,Bizeljska vas,https://sl.wikipedia.org/wiki/Grad_Bizeljsko
+4,46.37,14.10111111,Bled,Grad Bled,Bled,https://sl.wikipedia.org/wiki/Blejski_grad
+5,46.02388889,14.85805556,Šmartno pri Litiji,Grad Bogenšperk,Bogenšperk,https://sl.wikipedia.org/wiki/Grad_Bogen%C5%A1perk
+6,46.04811111,14.44461944,Ljubljana,Grad Bokalce,Ljubljana,https://sl.wikipedia.org/wiki/Grad_Bokalce
+7,46.375,16.00388889,Cirkulane,Grad Borl,Dolane,https://sl.wikipedia.org/wiki/Grad_Borl
+8,46.01888889,15.26888889,Sevnica,Grad Boštanj,Boštanj,https://sl.wikipedia.org/wiki/Grad_Bo%C5%A1tanj_(Sawenstein)
+9,45.93481667,14.67829167,Grosuplje,Grad Boštanj,Veliko Mlačevo,https://sl.wikipedia.org/wiki/Grad_Bo%C5%A1tanj_(Weissenstein)
+10,46.28194444,14.39,Kranj,Grad Brdo pri Kranju,Predoslje,https://sl.wikipedia.org/wiki/Grad_Brdo_pri_Kranju
+11,46.16888889,14.68388889,Lukovica,Grad Brdo pri Lukovici,Brdo pri Lukovici,https://sl.wikipedia.org/wiki/Grad_Brdo_pri_Lukovici
+12,45.74983056,14.71625833,Ribnica,Grad Breg,Breg pri Ribnici na Dolenjskem,https://sl.wikipedia.org/wiki/Grad_Breg
+13,45.90194444,15.59194444,Brežice,Grad Brežice,Brežice,https://sl.wikipedia.org/wiki/Grad_Bre%C5%BEice
+14,46.22,15.27194444,Celje,Grad Celje,Celje,https://sl.wikipedia.org/wiki/Celjski_grad
+15,46.22888889,15.26111111,Celje,Celje (spodnji grad),Celje,"https://sl.wikipedia.org/wiki/Kne%C5%BEji_dvorec,_Celje"
+16,46.705,15.78694444,Šentilj,Grad Cmurek,Trate,https://sl.wikipedia.org/wiki/Grad_Cmurek
+17,45.92621389,15.20414444,Mokronog - Trebelno,Čretež (zgornji grad),Dolenje Laknice,https://sl.wikipedia.org/wiki/Grad_Zgornji_%C4%8Crete%C5%BE
+18,45.92728333,15.20398889,Mokronog - Trebelno,Čretež (spodnji grad),Dolenje Laknice,https://sl.wikipedia.org/wiki/Grad_Spodnji_%C4%8Crete%C5%BE
+19,45.885,14.68363889,Grosuplje,Grad Čušperk,Čušperk,https://sl.wikipedia.org/wiki/Grad_%C4%8Cu%C5%A1perk
+20,46.33694444,15.21,Dobrna,Grad Dobrna,Lokovina,https://sl.wikipedia.org/wiki/Grad_Dobrna
+21,45.99694444,13.52388889,Brda,Grad Dobrovo,Dobrovo,https://sl.wikipedia.org/wiki/Grad_Dobrovo
+22,46.59305556,15.01805556,Dravograd,Dravograd,Dravograd,https://sl.wikipedia.org/wiki/Grad_Dravograd
+23,46.36,15.13111111,Velenje,Grad Ekenštajn,Velenje,https://sl.wikipedia.org/wiki/Grad_Eken%C5%A1tajn
+24,46.02791667,15.21305556,Sevnica,Grad Erkenštajn,Log pri Vrhovem,https://sl.wikipedia.org/wiki/Grad_Erken%C5%A1tajn
+25,46.545,15.44888889,Ruše,Fala (spodnji grad),Fala,https://sl.wikipedia.org/wiki/Grad_Fala
+26,46.42194444,15.08305556,Šoštanj,Grad Forhtenek,Šoštanj,https://sl.wikipedia.org/wiki/Grad_Forhtenek
+27,46.14055556,15.09055556,Hrastnik,Grad Freudeneck,Hrastnik,https://sl.wikipedia.org/wiki/Grad_Freudeneck
+28,45.61194444,14.86,Kočevje,Grad Fridrihštajn,Dolga vas,https://sl.wikipedia.org/wiki/Grad_Fridrih%C5%A1tajn
+29,46.05111111,14.56388889,Ljubljana,Grad Fužine,Ljubljana,https://sl.wikipedia.org/wiki/Grad_Fu%C5%BEine
+30,46.16194444,14.96805556,Zagorje ob Savi,Grad Gamberk,Ržiše,https://sl.wikipedia.org/wiki/Grad_Gamberk
+31,46.00111111,14.01888889,Idrija,Grad Gewerkenegg,Idrija,https://sl.wikipedia.org/wiki/Grad_Gewerkenegg
+32,46.68194444,15.98388889,Gornja Radgona,Grad Gornja Radgona,Gornja Radgona,https://sl.wikipedia.org/wiki/Grad_Gornja_Radgona
+33,45.505,14.335,Ilirska Bistrica,Grad Gotnik,Zabiče,https://sl.wikipedia.org/wiki/Grad_Gotnik
+34,45.81639167,15.18223056,Novo mesto,Grad Graben,Novo mesto,https://sl.wikipedia.org/wiki/Grad_Graben
+35,45.81611111,15.29694444,Šentjernej,Grad Gracarjev turn,Hrastje,https://sl.wikipedia.org/wiki/Gracarjev_turn
+36,45.87050833,15.63835833,Brežice,Grad Gračeno,Cirnik,https://sl.wikipedia.org/wiki/Grad_Gra%C4%8Deno
+37,46.8,16.09611111,Grad,Grad Grad,Grad,https://sl.wikipedia.org/wiki/Grad_Grad
+38,45.61305556,15.24611111,Metlika,Grad Gradac,Gradac,https://sl.wikipedia.org/wiki/Grad_Gradac
+39,45.795,15.17194444,Novo mesto,Grad Grm,Novo mesto,https://sl.wikipedia.org/wiki/Grad_Grm
+40,46.54897222,14.96083333,Ravne na Koroškem,Grad Guštanj,Ravne na Koroškem,https://sl.wikipedia.org/wiki/Grad_Gu%C5%A1tanj
+41,46.36194444,14.28861111,Tržič,Grad Gutenberg,Bistrica pri Tržiču,https://sl.wikipedia.org/wiki/Grad_Gutenberg
+42,46.10111111,15.52305556,Kozje,Grad Hartenštajn,Pilštanj,https://sl.wikipedia.org/wiki/Grad_Harten%C5%A1tajn
+43,45.86305556,15.15305556,Novo mesto,Grad Hmeljnik,Gorenje Kamenje,https://sl.wikipedia.org/wiki/Grad_Hmeljnik
+44,46.505,15.62305556,Hoče - Slivnica,Grad Hompoš,Pivola,https://sl.wikipedia.org/wiki/Grad_Hompo%C5%A1
+45,46.56611111,15.78694444,Lenart,Grad Hrastovec,Hrastovec v Slovenskih goricah,https://sl.wikipedia.org/wiki/Grad_Hrastovec
+46,45.9584,14.51974167,Ig,Grad Ig,Ig,https://sl.wikipedia.org/wiki/Grad_Ig
+47,46.14194444,14.55305556,Mengeš,Grad Jablje,Loka pri Mengšu,https://sl.wikipedia.org/wiki/Grad_Jablje
+48,46.37694444,14.20111111,Šoštanj,Grad Kacenštajn,Florjan,https://sl.wikipedia.org/wiki/Grad_Kacen%C5%A1tajn
+49,45.64153611,14.24569444,Ilirska Bistrica,Grad Kalec,Bač,https://sl.wikipedia.org/wiki/Grad_Kalec
+50,46.27305556,14.46194444,Cerklje na Gorenjskem,Grad Kamen,Adergas,https://sl.wikipedia.org/wiki/Grad_Kamen_(Adergas)
+51,46.38225833,14.21708889,Radovljica,Grad Kamen,Begunje na Gorenjskem,https://sl.wikipedia.org/wiki/Grad_Kamen
+52,46.22388889,14.61805556,Kamnik,Kamnik (stari grad),Kamnik,"https://sl.wikipedia.org/wiki/Stari_grad,_Kamnik"
+53,46.225,14.61194444,Kamnik,Kamnik (mali grad),Kamnik,https://sl.wikipedia.org/wiki/Mali_grad_Kamnik
+54,46.41344444,15.45161111,Slovenska Bistrica,Grad Kebelj,Podgrad na Pohorju,https://sl.wikipedia.org/wiki/Grad_Kebelj
+55,46.23805556,14.35388889,Kranj,Grad Kieselstein,Kranj,https://sl.wikipedia.org/wiki/Grad_Kieselstein
+56,45.90694444,15.23305556,Šmarješke Toplice,Grad Klevevž,Grič pri Klevevžu,https://sl.wikipedia.org/wiki/Grad_Klevev%C5%BE
+57,46.19733333,14.64836111,Domžale,Grad Kolovec,Kolovec,https://sl.wikipedia.org/wiki/Grad_Kolovec
+58,46.28,15.07305556,Polzela,Grad Komenda,Polzela,https://sl.wikipedia.org/wiki/Grad_Komenda_(Polzela)
+59,46.33582222,15.40931389,Slovenske Konjice,Grad Konjice,Zgornja Pristava,https://sl.wikipedia.org/wiki/Grad_Konjice
+60,46.11789167,14.683175,Domžale,Grad Koprivnik,Sveta Trojica,https://sl.wikipedia.org/wiki/Grad_Koprivnik
+61,45.50805556,14.91,Kostel,Grad Kostel,Kostel,https://sl.wikipedia.org/wiki/Grad_Kostel
+62,45.893175,14.92754444,Trebnje,Grad Kozjak,Dolenje selce,https://sl.wikipedia.org/wiki/Grad_Kozjak
+63,46.08111111,15.53,Kozje,Grad Kozje,Kozje,https://sl.wikipedia.org/wiki/Grad_Kozje
+64,45.91419167,14.77904722,Ivančna Gorica,Grad Kravjek,Leščevje,https://sl.wikipedia.org/wiki/Grad_Kravjek
+65,45.97234444,15.48166111,Krško,Grad Krško,Cesta,https://sl.wikipedia.org/wiki/Grad_Kr%C5%A1ko
+66,46.13388889,14.63388889,Domžale,Grad Krumperk,Gorjuša,https://sl.wikipedia.org/wiki/Grad_Krumperk
+67,45.63164167,15.22570833,Semič,Grad Krupa,Stranska vas pri Semiču,https://sl.wikipedia.org/wiki/Grad_Krupa
+68,46.05694444,15.69388889,Bistrica ob Sotli,Grad Kunšperk,Kunšperk,https://sl.wikipedia.org/wiki/Grad_Kun%C5%A1perk
+69,45.91713611,15.06528889,Trebnje,Lanšprež (stari grad),Češnjevek,https://sl.wikipedia.org/wiki/Grad_Lan%C5%A1pre%C5%BE_(stari_grad)
+70,45.92673611,15.05177778,Mirna,Lanšprež (novi grad),Gomila,https://sl.wikipedia.org/wiki/Grad_Lan%C5%A1pre%C5%BE_(novi_grad)
+71,46.15708333,15.23746389,Laško,Grad Laško,Laško,https://sl.wikipedia.org/wiki/Grad_La%C5%A1ko
+72,46.11,14.85,Litija,Grad Lebek,Potok pri Vačah,https://sl.wikipedia.org/wiki/Grad_Lebek
+73,46.32305556,15.24694444,Vojnik,Grad Lemberg,Lemberg pri Novi Cerkvi,https://sl.wikipedia.org/wiki/Grad_Lemberg_(L%C3%B6wenberg)
+74,46.25805556,15.55,Šmarje pri Jelšah,Grad Lemberg,Lemberg pri Šmarju,https://sl.wikipedia.org/wiki/Grad_Lemberg_(Lengenburg)
+75,46.56694444,16.45305556,Lendava,Grad Lendava,Lendava,https://sl.wikipedia.org/wiki/Lendavski_grad
+76,46.02333889,14.85785556,Šmartno pri Litiji,Grad Lihtenberk,Dvor,https://sl.wikipedia.org/wiki/Grad_Lihtenberk
+77,46.162715,14.78547694,Moravče,Grad Limberk,Limbarska Gora,https://sl.wikipedia.org/wiki/Grad_Limberk
+78,46.555,15.57611111,Maribor,Grad Limbuš,Limbuš,https://sl.wikipedia.org/wiki/Grad_Limbu%C5%A1
+79,46.35305556,15.325,Vojnik,Grad Lindek,Lindek,https://sl.wikipedia.org/wiki/Grad_Lindek
+80,46.32732778,14.16993611,Radovljica,Grad Lipnica,Zgornja Lipnica,https://sl.wikipedia.org/wiki/Lipni%C5%A1ki_grad
+81,46.04888889,14.50888889,Ljubljana,Grad Ljubljana,Ljubljana,https://sl.wikipedia.org/wiki/Ljubljanski_grad
+82,45.72444444,14.47194444,Loška dolina,Grad Lož,Lož,https://sl.wikipedia.org/wiki/Grad_Lo%C5%BE
+83,45.81694444,15.09694444,Novo mesto,Grad Luknja,Prečna,https://sl.wikipedia.org/wiki/Grad_Luknja
+84,46.39194444,15.36888889,Zreče,Grad Lušperk,Loška Gora pri Zrečah,https://sl.wikipedia.org/wiki/Grad_Lu%C5%A1perk
+85,46.35108889,15.73554444,Majšperk,Grad Majšperk,Majšperk,https://sl.wikipedia.org/wiki/Grad_Maj%C5%A1perk
+86,45.82305556,14.24694444,Postojna,Mali grad,Planina,"https://sl.wikipedia.org/wiki/Mali_grad,_Planina"
+87,46.56111111,15.64888889,Maribor,Maribor (mestni grad),Maribor,https://sl.wikipedia.org/wiki/Mariborski_grad
+88,46.14888889,14.92194444,Zagorje ob Savi,Grad Medija,Podlipovica,https://sl.wikipedia.org/wiki/Medijski_grad
+89,45.73805556,15.20388889,Novo mesto,Grad Mehovo,Podgrad,https://sl.wikipedia.org/wiki/Grad_Mehovo
+90,46.235,14.615,Kamnik,Grad Mekinje,Mekinje,https://sl.wikipedia.org/wiki/Grad_Mekinje
+91,45.65111111,15.31805556,Metlika,Grad Metlika,Metlika,https://sl.wikipedia.org/wiki/Grad_Metlika
+92,45.95805556,15.05388889,Mirna,Grad Mirna,Mirna,https://sl.wikipedia.org/wiki/Grad_Mirna
+93,45.85805556,15.67611111,Brežice,Grad Mokrice,Rajec,https://sl.wikipedia.org/wiki/Grad_Mokrice
+94,45.94196944,15.14544722,Mokronog - Trebelno,Grad Mokronog,Mokronog,https://sl.wikipedia.org/wiki/Grad_Mokronog
+95,46.21533333,14.88747222,Kamnik,Grad Motnik,Motnik,https://sl.wikipedia.org/wiki/Grad_Motnik
+96,46.66194444,16.16,Murska Sobota,Grad Murska Sobota,Murska Sobota,https://sl.wikipedia.org/wiki/Grad_Murska_Sobota
+97,46.61305556,15.15,Muta,Grad Muta,Muta,https://sl.wikipedia.org/wiki/Grad_Muta
+98,46.61111111,15.93694444,Gornja Radgona,Grad Negova,Negova,https://sl.wikipedia.org/wiki/Grad_Negova
+99,46.20805556,14.98305556,Tabor,Grad Ojstrica,Loke,https://sl.wikipedia.org/wiki/Grad_Ojstrica
+100,45.78271111,14.670475,Ribnica,Grad Ortnek,Ortnek,https://sl.wikipedia.org/wiki/Ortne%C5%A1ki_grad
+101,46.06094444,14.63405556,Ljubljana,Grad Ostri vrh,Ljubljana,https://sl.wikipedia.org/wiki/Grad_Ostri_vrh
+102,45.83805556,15.235,Novo mesto,Grad Otočec,Otočec,https://sl.wikipedia.org/wiki/Grad_Oto%C4%8Dec
+103,46.335,15.03388889,Šmartno ob Paki,Grad Pakenštajn,Šmartno ob Paki,https://sl.wikipedia.org/wiki/Grad_Paken%C5%A1tajn
+104,46.09694444,15.52388889,Kozje,Grad Pilštanj,Pilštanj,https://sl.wikipedia.org/wiki/Grad_Pil%C5%A1tanj
+105,46.00611111,15.63694444,Brežice,Grad Pišece,Pišece,https://sl.wikipedia.org/wiki/Grad_Pi%C5%A1ece
+106,46.10611111,15.40305556,Šentjur,Grad Planina,Planina pri Sevnici,https://sl.wikipedia.org/wiki/Grad_Planina
+107,45.53111111,15.31305556,Črnomelj,Grad Pobrežje,Pobrežje,https://sl.wikipedia.org/wiki/Grad_Pobre%C5%BEje
+108,46.15888889,15.59305556,Podčetrtek,Grad Podčetrtek,Podčetrtek,https://sl.wikipedia.org/wiki/Grad_Pod%C4%8Detrtek
+109,46.021075,14.96296667,Litija,Grad Podpeč,Podpeč pod Skalo,https://sl.wikipedia.org/wiki/Grad_Podpe%C4%8D
+110,46.02694444,15.58888889,Kozje,Grad Podsreda,Podsreda,https://sl.wikipedia.org/wiki/Grad_Podsreda
+111,45.50362778,15.05538889,Kočevje,Grad Poljane,Predgrad,https://sl.wikipedia.org/wiki/Grad_Poljane
+112,45.815,14.12805556,Postojna,Grad Predjama,Predjama,https://sl.wikipedia.org/wiki/Grad_Predjama
+113,45.605,14.185,Ilirska Bistrica,Grad Prem,Prem,https://sl.wikipedia.org/wiki/Grad_Prem
+114,45.795,15.325,Šentjernej,Grad Prežek,Cerov Log,https://sl.wikipedia.org/wiki/Grad_Pre%C5%BEek
+115,46.42111111,15.86805556,Ptuj,Grad Ptuj,Ptuj,https://sl.wikipedia.org/wiki/Grad_Ptuj
+116,46.59305556,15.04277778,Dravograd,Grad Pukštajn,Bukovje,https://sl.wikipedia.org/wiki/Grad_Puk%C5%A1tajn
+117,46.06827778,15.1815,Radeče,Grad Radeče,Radeče,https://sl.wikipedia.org/wiki/Grad_Rade%C4%8De
+118,46.61805556,15.22111111,Radlje ob Dravi,Grad Radlje,Radlje ob Dravi,https://sl.wikipedia.org/wiki/Grad_Radlje
+119,45.98888889,15.46611111,Krško,Grad Rajhenburg,Brestanica,https://sl.wikipedia.org/wiki/Grad_Rajhenburg
+120,45.92888889,15.38611111,Krško,Grad Raka,Raka,https://sl.wikipedia.org/wiki/Grad_Raka
+121,45.96275,15.08763333,Šentrupert,Grad Rakovnik,Slovenska vas,"https://sl.wikipedia.org/wiki/Grad_Rakovnik,_%C5%A0entrupert"
+122,45.99515833,15.2555,Sevnica,Grad Rekštanj,Laze pri Boštanju,https://sl.wikipedia.org/wiki/Grad_Rek%C5%A1tanj
+123,46.04411389,15.48666111,Krško,Grad Reštanj,Reštanj,https://sl.wikipedia.org/wiki/Grad_Re%C5%A1tanj
+124,45.73820306,14.7264,Ribnica,Grad Ribnica,Ribnica,https://sl.wikipedia.org/wiki/Grad_Ribnica
+125,46.20194444,15.40305556,Šentjur,Grad Rifnik,Rifnik,https://sl.wikipedia.org/wiki/Grad_Rifnik
+126,45.85084444,13.79208889,Nova Gorica,Grad Rihemberk,Branik,https://sl.wikipedia.org/wiki/Grad_Rihemberk
+127,46.23111111,15.70111111,Rogatec,Grad Rogatec,Rogatec,https://sl.wikipedia.org/wiki/Grad_Rogatec
+128,45.74111111,15.03805556,Dolenjske Toplice,Grad Rožek,Podturn pri Dolenjskih Toplicah,https://sl.wikipedia.org/wiki/Grad_Ro%C5%BEek_(Roseckh)
+129,46.15222222,14.7325,Moravče,Grad Rožek,Vinje pri Moravčah,https://sl.wikipedia.org/wiki/Grad_Ro%C5%BEek_(Rudolfseck)
+130,46.00805556,15.31388889,Sevnica,Grad Sevnica,Sevnica,https://sl.wikipedia.org/wiki/Grad_Sevnica
+131,46.47611111,15.65,Šentjur,Grad Slivnica,Gorica pri Slivnici,https://sl.wikipedia.org/wiki/Grad_Slivnica_(Schleinitz)
+132,46.50805556,15.06694444,Slovenj Gradec,Grad Slovenj Gradec,Slovenj Gradec,https://sl.wikipedia.org/wiki/Grad_Slovenj_Gradec
+133,46.39388889,15.57111111,Slovenska Bistrica,Grad Slovenska Bistrica,Slovenska Bistrica,https://sl.wikipedia.org/wiki/Grad_Slovenska_Bistrica
+134,46.165,14.44194444,Medvode,Grad Smlednik,Smlednik,https://sl.wikipedia.org/wiki/Grad_Smlednik
+135,45.68305556,14.46888889,Loška dolina,Grad Snežnik,Kozarišče,https://sl.wikipedia.org/wiki/Grad_Sne%C5%BEnik
+136,45.59,13.86111111,Koper,Grad Socerb,Socerb,https://sl.wikipedia.org/wiki/Grad_Socerb
+137,45.78111111,15.01111111,Dolenjske Toplice,Grad Soteska,Loška vas,https://sl.wikipedia.org/wiki/Grad_Stara_Soteska
+138,46.17111111,14.3,Škofja Loka,Grad Stara Loka,Stara Loka,https://sl.wikipedia.org/wiki/Grad_Stara_Loka
+139,45.84388889,15.20805556,Novo mesto,Stari grad,Zagrad pri Otočcu,"https://sl.wikipedia.org/wiki/Stari_grad,_Novo_mesto"
+140,45.995,15.155,Šentrupert,Grad Stražberk,Mali Cirnik pri Šentjanžu,https://sl.wikipedia.org/wiki/Grad_Stra%C5%BEberk
+141,46.26388889,14.47888889,Cerklje na Gorenjskem,Grad Strmol,Dvorje,https://sl.wikipedia.org/wiki/Grad_Strmol
+142,45.84194444,15.24805556,Novo mesto,Grad Struga,Gumberk,https://sl.wikipedia.org/wiki/Grad_Struga
+143,46.06611111,15.09805556,Radeče,Grad Svibno,Svibno,https://sl.wikipedia.org/wiki/Grad_Svibno
+144,46.36194444,15.12694444,Velenje,Grad Šalek,Velenje,https://sl.wikipedia.org/wiki/Grad_%C5%A0alek
+145,46.165,14.30305556,Škofja Loka,Grad Škofja Loka,Škofja Loka,https://sl.wikipedia.org/wiki/%C5%A0kofjelo%C5%A1ki_grad
+146,45.66111111,14.00694444,Divača,Grad Školj,Goriče pri Famljah,https://sl.wikipedia.org/wiki/Grad_%C5%A0kolj
+147,45.97805556,15.075,Šentrupert,Grad Škrljevo,Škrljevo,https://sl.wikipedia.org/wiki/Grad_%C5%A0krljevo
+148,46.37611111,15.04194444,Šoštanj,Grad Šoštanj,Šoštanj,https://sl.wikipedia.org/wiki/Grad_%C5%A0o%C5%A1tanj
+149,45.95194444,15.47111111,Krško,Grad Šrajbarski turn,Leskovec pri Krškem,https://sl.wikipedia.org/wiki/%C5%A0rajbarski_turn
+150,45.82388889,13.845,Komen,Grad Štanjel,Štanjel,https://sl.wikipedia.org/wiki/Grad_%C5%A0tanjel
+151,45.88115833,15.15285278,Mokronog - Trebelno,Grad Štatenberk,Štatenberk,https://sl.wikipedia.org/wiki/Grad_%C5%A0tatenberk
+152,45.74902778,14.44661111,Cerknica,Grad Šteberk,Žerovnica,https://sl.wikipedia.org/wiki/Grad_%C5%A0teberk
+153,45.872275,15.19568611,Novo mesto,Grad Štravberk,Štravberk,https://sl.wikipedia.org/wiki/Grad_%C5%A0travberk
+154,45.865,15.23611111,Šmarješke Toplice,Grad Štrlek,Šmarješke Toplice,https://sl.wikipedia.org/wiki/Grad_%C5%A0trlek
+155,45.89583889,14.88852194,Trebnje,Grad Šumberk,Sela pri Šumberku,https://sl.wikipedia.org/wiki/Grad_%C5%A0umberk
+156,45.62888889,14.02111111,Divača,Grad Švarcenek,Podgrad pri Vremah,https://sl.wikipedia.org/wiki/Grad_%C5%A0varcenek
+157,46.335,15.14194444,Velenje,Grad Švarcenštajn,Laze,https://sl.wikipedia.org/wiki/Grad_%C5%A0varcen%C5%A1tajn
+158,46.19,13.72611111,Tolmin,Grad Tolmin,Tolmin,https://sl.wikipedia.org/wiki/Grad_Tolmin
+159,45.89583889,14.88852194,Trebnje,Grad Trebnje,Trebnje,https://sl.wikipedia.org/wiki/Grad_Trebnje
+160,45.88194444,13.99,Ajdovščina,Grad Trilek,Col,https://sl.wikipedia.org/wiki/Grad_Trilek
+161,45.87694444,14.60694444,Velike Lašče,Turjak (novi grad),Turjak,https://sl.wikipedia.org/wiki/Grad_Turjak
+162,45.51882222,15.15936667,Črnomelj,Grad Turn pri Črnomlju,Breznik,https://sl.wikipedia.org/wiki/Grad_Turn_pri_%C4%8Crnomlju
+163,46.38,15.11888889,Velenje,Grad Turn pri Velenju,Hrastovec,https://sl.wikipedia.org/wiki/Grad_Turn_pri_Velenju
+164,46.12694444,14.72194444,Moravče,Grad Tuštanj,Zgornji Tuštanj,https://sl.wikipedia.org/wiki/Grad_Tu%C5%A1tanj
+165,46.42388889,15.18,Mislinja,Grad Valdek,Gornji Dolič,https://sl.wikipedia.org/wiki/Grad_Valdek
+166,46.35694444,15.11,Velenje,Grad Velenje,Velenje,https://sl.wikipedia.org/wiki/Grad_Velenje
+167,46.10544389,14.79251389,Litija,Grad Vernek,Vernek,https://sl.wikipedia.org/wiki/Grad_Vernek
+168,45.61044444,13.89041667,Hrpelje - Kozina,Grad Vikumberg,Beka,https://sl.wikipedia.org/wiki/Grad_Vikumberg
+169,46.56111111,15.53111111,Selnica ob Dravi,Grad Viltuš,Spodnji Slemen,https://sl.wikipedia.org/wiki/Grad_Viltu%C5%A1
+170,45.46,15.25611111,Črnomelj,Grad Vinica,Vinica,"https://sl.wikipedia.org/wiki/Grad_Vinica,_%C4%8Crnomelj"
+171,45.85,13.96388889,Vipava,Grad Vipava,Vipava,https://sl.wikipedia.org/wiki/Grad_Vipava
+172,45.97194444,13.53805556,Brda,Grad Vipolže,Vipolže,https://sl.wikipedia.org/wiki/Grad_Vipol%C5%BEe
+173,45.95111111,14.74388889,Ivančna Gorica,Grad Višnja Gora,Višnja Gora,https://sl.wikipedia.org/wiki/Grad_Vi%C5%A1nja_Gora
+174,46.37694444,15.29305556,Vitanje,Vitanje (stari grad),Vitanje,https://sl.wikipedia.org/wiki/Grad_Vitanje_(stari_grad)
+175,46.44888889,15.09305556,Slovenj Gradec,Grad Vodriž,Vodriž,https://sl.wikipedia.org/wiki/Grad_Vodri%C5%BE
+176,46.32111111,14.95111111,Nazarje,Grad Vrbovec,Nazarje,https://sl.wikipedia.org/wiki/Grad_Vrbovec
+177,46.48694444,15.79611111,Duplek,Grad Vurberk,Vurberk,https://sl.wikipedia.org/wiki/Grad_Vurberk
+178,46.6015,15.17132222,Vuzenica,Grad Vuzenica,Vuzenica,https://sl.wikipedia.org/wiki/Grad_Vuzenica
+179,46.29611111,15.52694444,Slovenske Konjice,Grad Zbelovo,Zbelovska Gora,https://sl.wikipedia.org/wiki/Grad_Zbelovo
+180,46.15111111,15.505,Šentjur,Grad Žamerk,Loka pri Žusmu,https://sl.wikipedia.org/wiki/Grad_%C5%BDamerk
+181,46.22611111,15.10694444,Prebold,Grad Žaženberk,Sveti Lovrenc,https://sl.wikipedia.org/wiki/Grad_%C5%BDa%C5%BEenberk
+182,46.06440556,15.15147222,Radeče,Grad Žebnik,Žebnik,https://sl.wikipedia.org/wiki/Grad_%C5%BDebnik
+183,46.27611111,15.005,Braslovče,Grad Žovnek,Podvrh,https://sl.wikipedia.org/wiki/Grad_%C5%BDovnek
+184,46.16017778,15.48691389,Šmarje pri Jelšah,Grad Žusem,Babna Gora,https://sl.wikipedia.org/wiki/Grad_%C5%BDusem
+185,45.83,14.92888889,Žužemberk,Grad Žužemberk,Žužemberk,https://sl.wikipedia.org/wiki/Grad_%C5%BDu%C5%BEemberk

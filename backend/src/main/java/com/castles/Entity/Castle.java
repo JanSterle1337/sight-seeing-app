@@ -31,14 +31,14 @@ public class Castle {
     public Castle() {
     }
 
-    public Castle(String name, String town, String municipality, String link) {
+    public Castle(long id,String name, String town, String municipality, String link) {
         this.name = name;
         this.town = town;
         this.municipality = municipality;
         this.website_link = link;
     }
 
-    public Castle(String name, String town, String municipality, Double latitude, Double longitude, String link) {
+    public Castle(long id, String name, String town, String municipality, Double latitude, Double longitude, String link) {
         this.name = name;
         this.town = town;
         this.municipality = municipality;

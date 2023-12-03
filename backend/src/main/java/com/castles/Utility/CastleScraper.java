@@ -81,8 +81,8 @@ public class CastleScraper {
                     System.out.println("Baje da so trenutne kordinate"+ coordinates.get(0));
                     double latitude = degreeConverter.convertDegreesToFloatDegree(coordinates.get(0));
                     double longitude = degreeConverter.convertDegreesToFloatDegree(coordinates.get(1));
-                    Castle castle = new Castle(castleName, city, municipality, latitude, longitude,website_link);
-                    castles.add(castle);
+                    //Castle castle = new Castle(castleName, city, municipality, latitude, longitude,website_link);
+                    //castles.add(castle);
                 }
 
             }
