@@ -28,7 +28,7 @@ public class CastleExcelService {
         ArrayList<Castle> castles = new ArrayList<>();
 
         try {
-            Scanner sc = new Scanner(new File("C:\\Users\\janst\\FRI\\MSI\\sight-seeing-app\\backend\\src\\main\\java\\com\\castles\\Data\\castles.csv"));
+            Scanner sc = new Scanner(new File("/home/ubuntu/msi/DN1/project/backend/src/main/java/com/castles/Data/castles.csv"));
             
             String neki = sc.nextLine();
 
